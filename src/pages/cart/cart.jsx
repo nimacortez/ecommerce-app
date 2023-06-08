@@ -18,6 +18,11 @@ export const Cart = () => {
             return <CartItem data={product} />;
           }
         })}
+        <div className="checkout">
+          <p> Subtotal: $</p>
+          <button> Continue Shopping</button>
+          <button> Checkout</button>
+          </div> 
     </div>
   </div>
 )};
