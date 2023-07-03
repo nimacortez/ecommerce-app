@@ -5,6 +5,11 @@ import { Shop } from './pages/shop/shop';
 import { Cart } from './pages/cart/cart';
 import { ShopContextProvider } from "./context/shop-context";
 
+fetch('https://fakestoreapi.com/products/1')
+.then(res=>res.json())
+.then(json=>console.log(json))
+.catch(error => console.log('ERROR'))
+
 function App() {
   return (
     <div className="App">
